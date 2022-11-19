@@ -21,12 +21,14 @@ function App() {
             })
             .catch((error) => console.error(error));
     };
+
     const getCityDetail = async (id) => {
         fetch(`${import.meta.env.VITE_BASE_URL}/currentconditions/v1/${id}?apikey=${import.meta.env.VITE_API_KEY}`)
             .then((response) => response.json())
             .then((response) => setCityDetail(response))
             .catch((error) => console.error(error));
     };
+
     const getForecastFiveDays = async (id) => {
         fetch(
             `${import.meta.env.VITE_BASE_URL}/forecasts/v1/daily/5day/${id}?apikey=${
@@ -37,9 +39,9 @@ function App() {
             .then((response) => setForecast(response))
             .catch((error) => console.error(error));
     };
+    
     return (
-        <div className='App'>
-            <div className='text-7xl font-semibold text-center mt-5'>Weather App</div>
+        <div className='App h-screen'>
             <Search getCity={getCity} />
             <Main city={city} cityDetail={cityDetail} forecast={forecast} />
         </div>
