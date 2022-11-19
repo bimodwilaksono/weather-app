@@ -1,0 +1,25 @@
+[
+  {
+      "LocalObservationDateTime": "2022-11-13T01:20:00+07:00",
+      "EpochTime": 1668277200,
+      "WeatherText": "Mostly cloudy",
+      "WeatherIcon": 38,
+      "HasPrecipitation": false,
+      "PrecipitationType": null,
+      "IsDayTime": false,
+      "Temperature": {
+          "Metric": {
+              "Value": 25.8,
+              "Unit": "C",
+              "UnitType": 17
+          },
+          "Imperial": {
+              "Value": 78.0,
+              "Unit": "F",
+              "UnitType": 18
+          }
+      },
+      "MobileLink": "http://www.accuweather.com/en/id/pemalang/202817/current-weather/202817?lang=en-us",
+      "Link": "http://www.accuweather.com/en/id/pemalang/202817/current-weather/202817?lang=en-us"
+  }
+]

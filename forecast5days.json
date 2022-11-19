@@ -1,0 +1,190 @@
+{
+  "Headline": {
+      "EffectiveDate": "2022-11-13T01:00:00+07:00",
+      "EffectiveEpochDate": 1668276000,
+      "Severity": 5,
+      "Text": "Expect showers late Saturday night",
+      "Category": "rain",
+      "EndDate": "2022-11-13T07:00:00+07:00",
+      "EndEpochDate": 1668297600,
+      "MobileLink": "http://www.accuweather.com/en/id/pemalang/202817/daily-weather-forecast/202817?unit=c&lang=en-us",
+      "Link": "http://www.accuweather.com/en/id/pemalang/202817/daily-weather-forecast/202817?unit=c&lang=en-us"
+  },
+  "DailyForecasts": [
+      {
+          "Date": "2022-11-12T07:00:00+07:00",
+          "EpochDate": 1668211200,
+          "Temperature": {
+              "Minimum": {
+                  "Value": 25.1,
+                  "Unit": "C",
+                  "UnitType": 17
+              },
+              "Maximum": {
+                  "Value": 30.4,
+                  "Unit": "C",
+                  "UnitType": 17
+              }
+          },
+          "Day": {
+              "Icon": 15,
+              "IconPhrase": "Thunderstorms",
+              "HasPrecipitation": true,
+              "PrecipitationType": "Rain",
+              "PrecipitationIntensity": "Heavy"
+          },
+          "Night": {
+              "Icon": 12,
+              "IconPhrase": "Showers",
+              "HasPrecipitation": true,
+              "PrecipitationType": "Rain",
+              "PrecipitationIntensity": "Moderate"
+          },
+          "Sources": [
+              "AccuWeather"
+          ],
+          "MobileLink": "http://www.accuweather.com/en/id/pemalang/202817/daily-weather-forecast/202817?unit=c&lang=en-us",
+          "Link": "http://www.accuweather.com/en/id/pemalang/202817/daily-weather-forecast/202817?unit=c&lang=en-us"
+      },
+      {
+          "Date": "2022-11-13T07:00:00+07:00",
+          "EpochDate": 1668297600,
+          "Temperature": {
+              "Minimum": {
+                  "Value": 24.9,
+                  "Unit": "C",
+                  "UnitType": 17
+              },
+              "Maximum": {
+                  "Value": 30.6,
+                  "Unit": "C",
+                  "UnitType": 17
+              }
+          },
+          "Day": {
+              "Icon": 15,
+              "IconPhrase": "Thunderstorms",
+              "HasPrecipitation": true,
+              "PrecipitationType": "Rain",
+              "PrecipitationIntensity": "Moderate"
+          },
+          "Night": {
+              "Icon": 15,
+              "IconPhrase": "Thunderstorms",
+              "HasPrecipitation": true,
+              "PrecipitationType": "Rain",
+              "PrecipitationIntensity": "Heavy"
+          },
+          "Sources": [
+              "AccuWeather"
+          ],
+          "MobileLink": "http://www.accuweather.com/en/id/pemalang/202817/daily-weather-forecast/202817?day=1&unit=c&lang=en-us",
+          "Link": "http://www.accuweather.com/en/id/pemalang/202817/daily-weather-forecast/202817?day=1&unit=c&lang=en-us"
+      },
+      {
+          "Date": "2022-11-14T07:00:00+07:00",
+          "EpochDate": 1668384000,
+          "Temperature": {
+              "Minimum": {
+                  "Value": 25.4,
+                  "Unit": "C",
+                  "UnitType": 17
+              },
+              "Maximum": {
+                  "Value": 30.6,
+                  "Unit": "C",
+                  "UnitType": 17
+              }
+          },
+          "Day": {
+              "Icon": 15,
+              "IconPhrase": "Thunderstorms",
+              "HasPrecipitation": true,
+              "PrecipitationType": "Rain",
+              "PrecipitationIntensity": "Moderate"
+          },
+          "Night": {
+              "Icon": 15,
+              "IconPhrase": "Thunderstorms",
+              "HasPrecipitation": true,
+              "PrecipitationType": "Rain",
+              "PrecipitationIntensity": "Heavy"
+          },
+          "Sources": [
+              "AccuWeather"
+          ],
+          "MobileLink": "http://www.accuweather.com/en/id/pemalang/202817/daily-weather-forecast/202817?day=2&unit=c&lang=en-us",
+          "Link": "http://www.accuweather.com/en/id/pemalang/202817/daily-weather-forecast/202817?day=2&unit=c&lang=en-us"
+      },
+      {
+          "Date": "2022-11-15T07:00:00+07:00",
+          "EpochDate": 1668470400,
+          "Temperature": {
+              "Minimum": {
+                  "Value": 25.2,
+                  "Unit": "C",
+                  "UnitType": 17
+              },
+              "Maximum": {
+                  "Value": 30.6,
+                  "Unit": "C",
+                  "UnitType": 17
+              }
+          },
+          "Day": {
+              "Icon": 7,
+              "IconPhrase": "Cloudy",
+              "HasPrecipitation": true,
+              "PrecipitationType": "Rain",
+              "PrecipitationIntensity": "Moderate"
+          },
+          "Night": {
+              "Icon": 38,
+              "IconPhrase": "Mostly cloudy",
+              "HasPrecipitation": true,
+              "PrecipitationType": "Rain",
+              "PrecipitationIntensity": "Heavy"
+          },
+          "Sources": [
+              "AccuWeather"
+          ],
+          "MobileLink": "http://www.accuweather.com/en/id/pemalang/202817/daily-weather-forecast/202817?day=3&unit=c&lang=en-us",
+          "Link": "http://www.accuweather.com/en/id/pemalang/202817/daily-weather-forecast/202817?day=3&unit=c&lang=en-us"
+      },
+      {
+          "Date": "2022-11-16T07:00:00+07:00",
+          "EpochDate": 1668556800,
+          "Temperature": {
+              "Minimum": {
+                  "Value": 25.1,
+                  "Unit": "C",
+                  "UnitType": 17
+              },
+              "Maximum": {
+                  "Value": 28.9,
+                  "Unit": "C",
+                  "UnitType": 17
+              }
+          },
+          "Day": {
+              "Icon": 12,
+              "IconPhrase": "Showers",
+              "HasPrecipitation": true,
+              "PrecipitationType": "Rain",
+              "PrecipitationIntensity": "Moderate"
+          },
+          "Night": {
+              "Icon": 7,
+              "IconPhrase": "Cloudy",
+              "HasPrecipitation": true,
+              "PrecipitationType": "Rain",
+              "PrecipitationIntensity": "Light"
+          },
+          "Sources": [
+              "AccuWeather"
+          ],
+          "MobileLink": "http://www.accuweather.com/en/id/pemalang/202817/daily-weather-forecast/202817?day=4&unit=c&lang=en-us",
+          "Link": "http://www.accuweather.com/en/id/pemalang/202817/daily-weather-forecast/202817?day=4&unit=c&lang=en-us"
+      }
+  ]
+}
