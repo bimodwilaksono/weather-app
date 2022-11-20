@@ -10,7 +10,7 @@ const app = express();
 // app.use('/', express.static(path.join(__dirname, "public")))
 
 app.get("/health", (req, res) => {
-    res.json({message: "Health is OK"});
+    res.json({ message: "Health is OK" });
 });
 
 app.get(`/current/:id`, async (req, res) => {
@@ -18,7 +18,15 @@ app.get(`/current/:id`, async (req, res) => {
     await axios
         .get(`${process.env.VITE_BASE_URL}/currentconditions/v1/${id}?apikey=${process.env.VITE_API_KEY}`)
         .then((resp) => res.json({ data: resp.data }))
-        .catch((err) => res.json({message: err.response.data.Message}));
+        .catch((err) => res.json({ message: err.response.data.Message }));
+});
+
+app.get("/search", async (req, res) => {
+    const { q } = req.query;
+    await axios
+        .get(`${process.env.VITE_BASE_URL}/locations/v1/cities/search?q=${q}&apikey=${process.env.VITE_API_KEY}`)
+        .then((resp) => res.json({ data: resp.data }))
+        .catch((err) => res.json({ message: err.response.data.Message }));
 });
 
 app.listen(5000, () => {
