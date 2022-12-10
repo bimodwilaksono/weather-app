@@ -8,6 +8,7 @@ const Search = (props) => {
         const inputForm = document.querySelector("form");
 
         inputForm.addEventListener("submit", (e) => {
+            // console.log(inputForm.city.value)
             e.preventDefault();
             const citySearch = inputForm.city.value.trim();
             getCity(citySearch);

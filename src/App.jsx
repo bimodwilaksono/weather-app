@@ -9,37 +9,35 @@ function App() {
 
     const getCity = async (city) => {
         fetch(
-            `${import.meta.env.VITE_BASE_URL}/locations/v1/cities/search?apikey=${
-                import.meta.env.VITE_API_KEY
-            }&q=${city}`
+            `/api/search?q=${city}`
         )
             .then((response) => response.json())
             .then((response) => {
-                setCity(response);
-                getCityDetail(response[0].Key);
-                getForecastFiveDays(response[0].Key);
+                setCity(response.data[0]);
+                getCityDetail(response.data[0].Key);
+                getForecastFiveDays(response.data[0].Key);
             })
             .catch((error) => console.error(error));
     };
 
     const getCityDetail = async (id) => {
-        fetch(`${import.meta.env.VITE_BASE_URL}/currentconditions/v1/${id}?apikey=${import.meta.env.VITE_API_KEY}`)
+        fetch(`/api/current/${id}`)
             .then((response) => response.json())
-            .then((response) => setCityDetail(response))
+            .then((response) => setCityDetail(response.data[0]))
             .catch((error) => console.error(error));
     };
 
     const getForecastFiveDays = async (id) => {
         fetch(
-            `${import.meta.env.VITE_BASE_URL}/forecasts/v1/daily/5day/${id}?apikey=${
-                import.meta.env.VITE_API_KEY
-            }&metric=${true}`
+            `/api/forecast/${id}`
         )
             .then((response) => response.json())
-            .then((response) => setForecast(response))
+            .then((response) => setForecast(response.data))
             .catch((error) => console.error(error));
     };
-    
+    console.log('city', city)
+    console.log('cityDetail', cityDetail)
+    console.log('forecast', forecast)
     return (
         <div className='App h-screen'>
             <Search getCity={getCity} />
