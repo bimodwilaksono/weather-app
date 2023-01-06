@@ -11,7 +11,7 @@ const ForecastCard = (props) => {
                     <div key={index} className='forecastCard text-center w-28 h-24 rounded-md bg-green-700'>
                         <p>{dayjs(item.Date).format('ddd')}</p>
                         <div>icon</div>
-                        <p>{item.Temperature.Minimum.Value} - {item.Temperature.Maximum.Value}</p>
+                        <p>{item.Temperature.Minimum.Value}°C - {item.Temperature.Maximum.Value}°C</p>
                     </div>
                 );  
             })}
