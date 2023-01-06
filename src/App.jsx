@@ -9,6 +9,13 @@ function App() {
     const [forecast, setForecast] = useState(null);
     const [isLoading, setLoading] = useState(false);
 
+    const clearState = () => {
+        setCity(null);
+        setCityDetail(null);
+        setForecast(null);
+        setLoading(false);
+    }
+
     const getCity = async (city) => {
         setLoading(true);
         fetch(`/api/search?q=${city}`)
@@ -38,9 +45,11 @@ function App() {
             .catch((error) => console.error(error));
     };
 
+    console.log('forecast', forecast)
+
     return (
         <div className='App h-screen'>
-            <Search getCity={getCity} />
+            <Search getCity={getCity} clearState={clearState} />
             {isLoading ? (
                 <LoadingSpinner />
             ) : forecast ? (
