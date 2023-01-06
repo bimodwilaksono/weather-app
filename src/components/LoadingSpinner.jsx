@@ -1,8 +1,10 @@
 import React from 'react'
 
+import './LoadingSpinner.scss'
+
 function LoadingSpinner() {
   return (
-    <div>LoadingSpinner</div>
+    <div className='loader'></div>
   )
 }
 
