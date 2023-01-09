@@ -2,8 +2,7 @@ import React, { useState } from "react";
 import { RiDeleteBin6Line } from "react-icons/ri";
 
 const Search = (props) => {
-    const { getCity, clearState } = props;
-    const [enteredTitle, setEnteredTitle] = useState("");
+    const { getCity, clearState, setEnteredTitle, enteredTitle } = props;
 
     return (
         <div className='mt-5 text-center'>
