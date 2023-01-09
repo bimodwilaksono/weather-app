@@ -10,14 +10,13 @@ function App() {
     const [isLoading, setLoading] = useState(false);
     const [enteredTitle, setEnteredTitle] = useState("");
 
-
     const clearState = () => {
         setCity(null);
         setCityDetail(null);
         setForecast(null);
         setLoading(false);
-        setEnteredTitle('')
-    }
+        setEnteredTitle("");
+    };
 
     const getCity = async (city) => {
         setLoading(true);
@@ -48,11 +47,14 @@ function App() {
             .catch((error) => console.error(error));
     };
 
-    console.log('forecast', forecast)
-
     return (
         <div className='App h-screen'>
-            <Search getCity={getCity} clearState={clearState} setEnteredTitle={setEnteredTitle} enteredTitle={enteredTitle} />
+            <Search
+                getCity={getCity}
+                clearState={clearState}
+                setEnteredTitle={setEnteredTitle}
+                enteredTitle={enteredTitle}
+            />
             {isLoading ? (
                 <LoadingSpinner />
             ) : forecast ? (
