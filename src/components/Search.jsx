@@ -1,8 +1,24 @@
 import React from "react";
 import { RiDeleteBin6Line } from "react-icons/ri";
+import { useSetRecoilState } from "recoil";
+import { useRecoilState } from "recoil";
+import { cityDetailState, cityState, enteredTitleState, forecastState, isLoadingState } from "../App";
 
 const Search = (props) => {
-    const { getCity, clearState, setEnteredTitle, enteredTitle } = props;
+    const { getCity } = props;
+    const [enteredTitle, setEnteredTitle] = useRecoilState(enteredTitleState)
+    const setCity = useSetRecoilState(cityState)
+    const setCityDetail = useSetRecoilState(cityDetailState);
+    const setForecast = useSetRecoilState(forecastState);
+    const setLoading = useSetRecoilState(isLoadingState)
+
+    const clearState = () => {
+        setCity("");
+        setCityDetail(null);
+        setForecast(null);
+        setLoading(false);
+        setEnteredTitle("");
+    };
 
     return (
         <div className='mt-5 text-center'>

@@ -1,8 +1,10 @@
 import React from "react";
 import dayjs from "dayjs";
+import { useRecoilValue } from "recoil";
+import { forecastState } from "../App";
 
-const ForecastCard = (props) => {
-    const { forecast } = props;
+const ForecastCard = () => {
+    const forecast = useRecoilValue(forecastState);
 
     return (
         <div className='forecastCardWrapper flex justify-center gap-8 mt-8'>

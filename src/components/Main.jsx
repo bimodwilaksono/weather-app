@@ -1,13 +1,13 @@
 import React from "react";
+import { useRecoilValue } from "recoil";
 import CurrentCard from "./CurrentCard";
 import ForecastCard from "./ForecastCard";
 
-const Main = (props) => {
-    const { city, cityDetail, forecast } = props;
+const Main = () => {
     return (
         <div className='w-full mt-10'>
-            <CurrentCard city={city} cityDetail={cityDetail} />
-            <ForecastCard forecast={forecast} />
+            <CurrentCard />
+            <ForecastCard />
         </div>
     );
 };
