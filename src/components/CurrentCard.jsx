@@ -2,9 +2,12 @@ import React from "react";
 import dayjs from "dayjs";
 
 import { MdLocationPin } from "react-icons/md";
+import { cityDetailState, cityState } from "../App";
+import { useRecoilValue } from "recoil";
 
-const CurrentCard = (props) => {
-    const { city, cityDetail } = props;
+const CurrentCard = () => {
+    const city = useRecoilValue(cityState)
+    const cityDetail = useRecoilValue(cityDetailState);
     const currentDate = dayjs(new Date()).format("ddd, D MMM");
     const cityName = city?.EnglishName;
     const countryName = city?.Country?.EnglishName;
